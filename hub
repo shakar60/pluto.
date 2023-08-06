@@ -1,0 +1,260 @@
+-- Library & Window
+
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local Window = Library.CreateLib("Pluto Hub", "Synapse")
+
+--Notify
+
+--1st Notify
+
+local AkaliNotif = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/Dynissimo/main/Scripts/AkaliNotif.lua"))();
+local Notify = AkaliNotif.Notify;
+Notify({
+Description = "Made By Pluto";
+Title = "Pluto Hub Loaded";
+Duration = 5;
+});
+
+--2nd Notify
+
+game.StarterGui:SetCore("SendNotification", {
+Title = "Join discord"; 
+Text = "https://discord.gg/UhceAu7y"; 
+Duration = 3; 
+})
+
+--Toggle Ui Button
+
+--Toggle
+local ToggleGui = Instance.new("ScreenGui")
+local Toggle = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+
+--Properties
+ToggleGui.Name = "Toggle Gui"
+ToggleGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ToggleGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ToggleGui.ResetOnSpawn = false
+
+UICorner.Parent = Toggle
+Toggle.Name = "Toggle"
+Toggle.Parent = ToggleGui
+Toggle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Toggle.Position = UDim2.new(0, 0, 0.454706937, 0)--position of the toggle
+Toggle.Size = UDim2.new(0, 80, 0, 38)--size of the toggle
+Toggle.Font = Enum.Font.SourceSans
+Toggle.Text = "Toggle"--name of the toggle
+Toggle.TextColor3 = Color3.fromRGB(255, 255, 255)
+Toggle.TextSize = 19.000
+Toggle.Draggable = true
+Toggle.MouseButton1Click:connect(function()
+  Library:ToggleUI()
+end)
+
+--Tabs
+
+local Tab1 = Window:NewTab("Dh Aimlocks & More")
+local Tab2 = Window:NewTab("Keystroke Tools")
+
+--Sections
+
+local Tab1Section = Tab1:NewSection("Dh AimLocks")
+local Tab2Section = Tab2:NewSection("Keystroke Tools")
+
+--Scripts
+
+Tab2Section:NewLabel("Q Tool")
+
+Tab2Section:NewButton("Q Tool", "Loads An Script That Gives You Q Tool", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/Q/main/Tool",true))()
+    print("Clicked")
+end)
+
+Tab2Section:NewLabel("G Tool")
+
+Tab2Section:NewButton("G Tool", "Loads An Script That Gives You G Tool", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/G./main/Tool",true))()
+    print("Clicked")
+end)
+
+Tab2Section:NewLabel("C Tool")
+
+Tab2Section:NewButton("C Tool", "Loads An Script That Gives You C Tool", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/C/main/Tool",true))()
+    print("Clicked")
+end)
+
+Tab2Section:NewLabel("M Tool")
+
+Tab2Section:NewButton("M tool", "Gives You M Tool", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/M/main/Tool",true))()
+    print("Clicked")
+end)
+
+Tab2Section:NewLabel("N Tool")
+
+Tab2Section:NewButton("N tool", "Gives You N Tool", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/N/main/Tool",true))()
+    print("Clicked")
+end)
+
+Tab2Section:NewLabel("F Tool")
+
+Tab2Section:NewButton("F tool", "Gives You F Tool", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/F/main/Tool",true))()
+    print("Clicked")
+end)
+
+Tab2Section:NewLabel("Keybind Maker")
+
+Tab2Section:NewButton("Keybind Maker", "Makes Any Keybind You Want", function()
+loadstring(game:HttpGet(('https://pastefy.app/Ujm4HWxh/raw'),true))()
+    print("Clicked")
+end)
+
+Tab1Section:NewLabel("Aim Viewer")
+
+Tab1Section:NewButton("Dh Aim Viewer Script", "Loads Da Hood Aim Viewer Script", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Nosssa/NossLock/main/VinGUI"))()
+    print("Clicked")
+end)
+
+Tab1Section:NewLabel("Private Kai Lock")
+
+Tab1Section:NewButton("Dh Private Kai Lock", "Loads a Tool That Gives You Lock In Dh", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/j08xM9mW", true))()
+    print("Clicked")
+end)
+
+Tab1Section:NewLabel("Ryzzychips Lock")
+
+Tab1Section:NewButton("Dh ryzzchips Lock Script", "Loads Dhat Lock Tool", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/j08xM9mW", true))()
+    print("Clicked")
+end)
+
+Tab1Section:NewLabel("Brans Hub")
+
+Tab1Section:NewButton("Brans Hub", "Loads Brans Hub", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/8G5wzp3L"))()
+    print("Clicked")
+end)
+
+Tab1Section:NewLabel("Fake Macro")
+
+Tab1Section:NewButton("Fake Macro", "Loads Fake Macro For Alot Of Diffrent Maps", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/Macro/main/M.N.C",true))()
+    print("Clicked")
+end)
+
+Tab1Section:NewLabel("Beamed Ware Hub")
+
+Tab1Section:NewButton("Beamed Ware Hub", "Loads Beamed Ware Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RYZZCHIPSX/ryzzchips/main/beamed%20ware%20script"))();
+    print("Clicked")
+end)
+
+Tab1Section:NewLabel("Flash Lock")
+
+Tab1Section:NewButton("Dh Flash Lock", "Loads a Script That Gives You Lock In Dh", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/GXma0NrL",true))()
+    print("Clicked")
+end)
+
+Tab1Section:NewLabel("Orange Box Lock")
+
+Tab1Section:NewButton("Dh Orange Box Lock", "Loads a Script That Gives You Lock In Dh", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Ryzzchips/SubtoRyzzchips/6942334039b725b3ea380aaa7959949f938c2dc9/obf_swVYM0h5h3Rk75C9yprMgKc2ER64968pH0zAy2E30o3H3smBe01xnvZNwrm6oDYo.lua.txt", true))()
+    print("Clicked")
+end)
+
+Tab1Section:NewLabel("Speed Tool")
+
+Tab1Section:NewButton("Dh Speed Tool", "Controls C for turn on/off M for speed+ N for speed-", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/EX6qHypK", true))()
+   print("Clicked")
+  end)
+
+Tab1Section:NewLabel("Swag Mode Hub")
+
+Tab1Section:NewButton("Dh Swag Mode", "Loads a Script Hub For Dh", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()
+    print("Clicked")
+end)
+
+Tab1Section:NewLabel("Rage Lock")
+
+Tab3Section:NewButton("Dh Rage Aimlock", "Loads Aimlock Script For Dh", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Ryzzchips/SubtoRyzzchips/main/Sub%20to%20Ryzzchips%20for%20more%20New%20aimlock%20script!"))()
+    print("Clicked")
+end)
+
+Tab1Section:NewLabel("RayCodex Hub")
+
+Tab1Section:NewButton("Dh Raycodex", "Loads a Script Hub For Dh", function()
+loadstring(game:GetObjects("rbxassetid://5812737894")[1].Source)()
+    print("Clicked")
+end)
+
+Tab1Section:NewLabel("KirbsWare Anti Lock")
+
+Tab1Section:NewButton("Dh KirbsWare Anti Lock", "Loads a Script For Dh", function()
+loadstring(game:HttpGet('https://github.com/Kirbsware/script/raw/main/Mobile'))()
+    print("Clicked")
+end)
+
+Tab1Section:NewLabel("NukerMode Hub")
+
+Tab1Section:NewButton("Dh Nukermode", "Loads a Script For Dh", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Allvideo/test/main/Whitelist.txt"))()
+    print("Clicked")
+end)
+
+Tab1Section:NewLabel("Tenaki CamLock")
+
+Tab1Section:NewButton("Dh Tenaki Camlock", "Loads a Script For Dh", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/Tenkai./main/imean.Tenaki",true))()
+    print("Clicked")
+end)
+
+Tab1Section:NewLabel("Faded Hub")
+
+Tab1Section:NewButton("Faded Script", "Loads Faded Script For Dh", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))()
+    print("Clicked")
+end)
+
+Tab1Section:NewLabel("Pluto Hub")
+
+Tab1Section:NewButton("Pluto Script", "Loads Pluto Script For Dh", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Scrvpter/Pluto/Lua/Loader.Lua', true))()
+    print("Clicked")
+end)
+
+Tab1Section:NewLabel("Red Dot Lock")
+
+Tab1Section:NewButton("Red Dot Lock", "Loads Red Dot Lock", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/scripthubekitten/reddot1/main/reddot1", true))()
+    print("Clicked")
+end)
+
+Tab1Section:NewLabel("IosW Lock")
+
+Tab1Section:NewButton("IosW Lock", "Loads IosW Lock", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/iosW/main/Lock",true))()
+    print("Clicked")
+end)
+
+Tab1Section:NewLabel("Silent Aim Gui")
+
+Tab1Section:NewButton("Silent Aim Gui", "Loads Silent Aim Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/zuwdaq/legit-slient-aim-script/main/legit",true))()
+    print("Clicked")
+end)
+
+Tab1Section:NewLabel("Nyula Gui")
+
+Tab1Section:NewButton("Nyula Gui", "Loads Nyula Gui For Locks And More", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/nyulachan/nyula/main/nyula", true))()
+    print("Clicked")
+end)
